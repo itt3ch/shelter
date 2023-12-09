@@ -3,25 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Flexible Catalog</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
   <div class="catalog-container">
-    <h1>Catalog</h1>
+    <h1>Наші улюбленці</h1>
     <ul class="item-list">
       {% for item in items %}
         <li class="item">
-          <img src="{{ item.image }}" alt="{{ item.name }}" class="item-image">
+          <img src="{{ item.image }}" class="item-image">
           <div class="item-details">
-            <h2>{{ item.name }}</h2>
-            <p>{{ item.description }}</p>
-            <p>Price: ${{ item.price }}</p>
+            <p>Імя: {{ item.name }}</p>
+            <p>Вік: {{ item.age }}</p>
+            <p>Порода: {{ item.breed }}</p>
+            <p>Походження: {{ item.origin }}</p>
+            <a href="/profile/{{ item.id }}" class="view-profile-btn">Переглянути</a>
           </div>
         </li>
       {% endfor %}
     </ul>
   </div>
 
-  <script src="../js/scripts.js"></script>
+  <script src="../static/js/scripts.js"></script>
 </body>
 </html>

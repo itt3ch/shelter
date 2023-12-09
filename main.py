@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 
 items = [
-    {'name': 'Item 1', 'price': 10},
-    {'name': 'Item 2', 'price': 20},
-    {'name': 'Item 3', 'price': 15},
-    # Add more items as needed...
+    {'image': 'https://i.ibb.co/9tJdPbB/flag-ua.png', 'name': 'Ukraine', 'age': 2, 'breed': 'Oleg',
+     'origin': 'Moscow', 'id': 1},
+    # Додайте більше об'єктів за необхідності...
 ]
+
 
 
 @app.route('/')
