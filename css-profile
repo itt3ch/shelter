@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.profile-title {
+    margin-top: 0;
+    color: #343a40;
+}
+
+.profile-username {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.profile-text {
+    margin-bottom: 10px;
+}
