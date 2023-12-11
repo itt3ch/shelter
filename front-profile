@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="https://i.yapx.ru/W3GTL.jpg" class="profile-img" alt="User Photo">
+            <div class="profile-info">
+                <h2 class="profile-title">User Information</h2>
+                <a class="profile-username" href="{{ url_for('profile', username='Patron') }}" target="_blank">Patron</a>
+                <p class="profile-text"><strong>Name:</strong> John Doe</p>
+                <p class="profile-text"><strong>Email:</strong> john.doe@example.com</p>
+                <!-- Add more user information as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
